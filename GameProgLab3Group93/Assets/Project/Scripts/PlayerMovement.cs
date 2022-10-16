@@ -47,7 +47,7 @@ namespace Labs
 
             if (_xMovement != 0)
             {
-                SetState(State.Move);
+                SetState(State.Run);
                 return;
             }
 
@@ -57,18 +57,9 @@ namespace Labs
         private void SetState(State state)
         {
             _state = state;
-
-            switch (_state)
-            {
-                case State.Idle:
-					_animator.Play(State.Idle.ToString());
-					break;
-                case State.Move:
-                    _animator.Play(State.Move.ToString());
-					break;
-                default:
-                    break;
-            }
+            var stateName = _state.ToString();
+            _animator.Play(stateName);
+            Debug.Log(stateName);
         }
 
         private bool IsGrounded()
@@ -83,18 +74,21 @@ namespace Labs
 		public void Move(InputAction.CallbackContext context)
         {
 		    _xMovement = context.ReadValue<Vector2>().x;
-
             CheckFacingDirection();
 		}
 
         private void CheckFacingDirection()
         {
-			FlipCharacterRight(_xMovement < 0);
+            if (_xMovement == 0)
+            {
+                return;
+            }
+			FlipCharacter();
 		}
 
-        private void FlipCharacterRight(bool flip)
+        private void FlipCharacter()
         {
-			_spriteRenderer.flipX = flip;
+            _spriteRenderer.flipX = _xMovement < 0;
 		}
 
 		public void Jump(InputAction.CallbackContext context)

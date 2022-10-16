@@ -3,7 +3,7 @@ namespace Labs
     public enum State
     {
         Idle,
-        Move,
+        Run,
         Jump
     }
 }
