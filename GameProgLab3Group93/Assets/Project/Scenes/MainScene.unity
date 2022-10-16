@@ -489,9 +489,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.005889277}
   serializedVersion: 2
-  m_Radius: 0.13
+  m_Radius: 0.12411072
 --- !u!50 &731412826
 Rigidbody2D:
   serializedVersion: 4
@@ -629,7 +629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movementSpeed: 5
   _jumpSpeed: 7
-  _groundCheckRadius: 0.6
+  _groundCheckRadius: 0.8
   _groundMask:
     serializedVersion: 2
     m_Bits: 64
