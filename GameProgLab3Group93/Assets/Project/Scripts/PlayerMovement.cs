@@ -61,10 +61,10 @@ namespace Labs
             switch (_state)
             {
                 case State.Idle:
-					_animator.Play("Idle");
+					_animator.Play(State.Idle.ToString());
 					break;
                 case State.Move:
-                    _animator.Play("Run");
+                    _animator.Play(State.Move.ToString());
 					break;
                 default:
                     break;
