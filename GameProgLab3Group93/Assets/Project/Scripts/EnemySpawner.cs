@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,18 +10,13 @@ namespace Labs {
         [SerializeField] private FierceToothFactory _ftFactory;
         [SerializeField] private PinkStarFactory _psFactory;
 
-        void Start()
-        {
-            var crab_prefab = _crabFactory.GetNewInstance();
-            // var cr_prefab = _crabFactory.GetNewInstance();
-            // var ft_prefab = _ftFactory.GetNewInstance();
-            // var ps_prefab = _psFactory.GetNewInstance();
+        void Start() {          
+            _crabFactory.GetNewInstance();
+            _ftFactory.GetNewInstance();
+            _psFactory.GetNewInstance();
         }
 
         // Update is called once per frame
-        void Update()
-        {
-            var crab_prefab = _crabFactory.GetNewInstance();
-        }
+        void Update() {}
     }
 }
