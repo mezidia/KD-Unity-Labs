@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -7883484968329254403}
   - component: {fileID: 7979565691871204173}
   - component: {fileID: 8481031558669098747}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FierceToothEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

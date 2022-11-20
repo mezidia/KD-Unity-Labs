@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6941820832672379353}
   - component: {fileID: -6990823471279370348}
   - component: {fileID: 1687989634071409511}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PinkStar
   m_TagString: Untagged
   m_Icon: {fileID: 0}

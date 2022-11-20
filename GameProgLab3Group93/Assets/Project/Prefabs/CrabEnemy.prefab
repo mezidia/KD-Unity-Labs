@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -5341009475658493093}
   - component: {fileID: 6277130878716652746}
   - component: {fileID: 396859747903983803}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CrabEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

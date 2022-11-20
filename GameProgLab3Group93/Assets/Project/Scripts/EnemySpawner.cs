@@ -11,9 +11,9 @@ namespace Labs {
         [SerializeField] private PinkStarFactory _psFactory;
 
         void Start() {
-            int n = 5;
+            int n = 3;
             string[] arr = {"crab", "ft", "ps"};
-            
+
             for (int i = 0; i < n; i++) {
                 System.Random random = new System.Random();
                 int index = random.Next(0, arr.Length);
