@@ -10,13 +10,16 @@ namespace Labs {
         [SerializeField] private FierceToothFactory _ftFactory;
         [SerializeField] private PinkStarFactory _psFactory;
 
-        void Start() {          
+        void Start() {      
             _crabFactory.GetNewInstance();
             _ftFactory.GetNewInstance();
             _psFactory.GetNewInstance();
+
         }
 
         // Update is called once per frame
-        void Update() {}
+        void Update() {
+
+        }
     }
 }
