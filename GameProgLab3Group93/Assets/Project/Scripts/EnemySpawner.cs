@@ -11,7 +11,9 @@ namespace Labs {
         [SerializeField] private PinkStarFactory _psFactory;
 
         void Start() {
-            int n = 3;
+            Neuron neuron = new Neuron();
+            neuron.Train(1, 3);
+            int n = (int)Math.Round(neuron.ProcessInputData(1));
             string[] arr = {"crab", "ft", "ps"};
 
             for (int i = 0; i < n; i++) {
