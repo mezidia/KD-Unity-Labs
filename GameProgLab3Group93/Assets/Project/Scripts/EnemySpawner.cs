@@ -9,11 +9,13 @@ namespace Labs {
         [SerializeField] private CrabFactory _crabFactory;
         [SerializeField] private FierceToothFactory _ftFactory;
         [SerializeField] private PinkStarFactory _psFactory;
+        [SerializeField] private Characteristics _playerStats;
 
         void Start() {
             Neuron neuron = new Neuron();
             neuron.Train(1, 3);
-            int n = (int)Math.Round(neuron.ProcessInputData(1));
+            decimal input = (decimal)(_playerStats.Power / _playerStats.Health);
+            int n = (int)Math.Round(neuron.ProcessInputData(input));
             string[] arr = {"crab", "ft", "ps"};
 
             for (int i = 0; i < n; i++) {

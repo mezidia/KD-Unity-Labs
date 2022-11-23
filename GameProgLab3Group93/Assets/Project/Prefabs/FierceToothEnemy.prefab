@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -7883484968329254403}
   - component: {fileID: 7979565691871204173}
   - component: {fileID: 8481031558669098747}
+  - component: {fileID: 7311382777893369505}
   m_Layer: 7
   m_Name: FierceToothEnemy
   m_TagString: Untagged
@@ -160,3 +161,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7311382777893369505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3027102927399642753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d88049c596f7155449bf0579d6164b74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Health>k__BackingField: 10
+  <Power>k__BackingField: 10

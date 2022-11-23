@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -5341009475658493093}
   - component: {fileID: 6277130878716652746}
   - component: {fileID: 396859747903983803}
+  - component: {fileID: 3105990676194787546}
   m_Layer: 7
   m_Name: CrabEnemy
   m_TagString: Untagged
@@ -160,3 +161,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.1241107
+--- !u!114 &3105990676194787546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2479765135410408127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d88049c596f7155449bf0579d6164b74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Health>k__BackingField: 10
+  <Power>k__BackingField: 10
